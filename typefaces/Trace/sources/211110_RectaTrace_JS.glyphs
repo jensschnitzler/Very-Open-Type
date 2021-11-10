@@ -20,12 +20,12 @@ name = aalt;
 },
 {
 automatic = 1;
-code = "sub n by n.ss01;\012sub x by x.ss01;\012sub ampersand by ampersand.ss01;\012";
+code = "sub ampersand by ampersand.ss01;\012";
 name = salt;
 },
 {
 automatic = 1;
-code = "sub n by n.ss01;\012sub x by x.ss01;\012sub ampersand by ampersand.ss01;\012";
+code = "sub ampersand by ampersand.ss01;\012";
 name = ss01;
 }
 );
