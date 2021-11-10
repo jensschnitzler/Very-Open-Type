@@ -3,6 +3,8 @@ layout: default
 ---
 
 [Link to another page](./another-page.html).
+[Open Font License](./OFL.html).
+[Link to tRace Typeface](./typefaces/Trace/index.html).
 
 # Header 1
 

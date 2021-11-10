@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # SIL OPEN FONT LICENSE
 _Version 1.1 - 26 February 2007_
 
