@@ -2,10 +2,25 @@
 
 @font-face {
   font-family: 'Trace';
-  src: url('typefaces/Trace/fonts/RectaTrace_211104_VOT-Regular.eot'); /* IE9 Compat Modes */
-  src: url('typefaces/Trace/fonts/RectaTrace_211104_VOT-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('typefaces/Trace/fonts/RectaTrace_211104_VOT-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('typefaces/Trace/fonts/RectaTrace_211104_VOT-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+  src: url('Very-Open-Type/typefaces/Trace/fonts/RectaTrace_211104-1_JS-Regular.eot'); /* IE9 Compat Modes */
+  src: url('Very-Open-Type/typefaces/Trace/fonts/RectaTrace_211104-1_JS-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Very-Open-Type/typefaces/Trace/fonts/RectaTrace_211104-1_JS-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Very-Open-Type/typefaces/Trace/fonts/RectaTrace_211104-1_JS-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+}
+
+html {
+  /* Adjust font size */
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
 }
 
 html,body {
