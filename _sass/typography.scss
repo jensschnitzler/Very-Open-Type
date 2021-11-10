@@ -27,5 +27,17 @@ html,body {
   font-family: "Trace", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
   line-height: 1.2;
+  font-weight: normal;
   //color: $body-text-color;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
