@@ -6,14 +6,11 @@
     <div class="crumb">{{ site.title }} / {{ page.title }}</div>
 
     <main id="content" class="main-content" role="main">
+      <h1>{{ page.title }}</h1>
       {{ content }}
-
-      <br>
-      <br>
-
       <div class="character-map">ABC</div>
-
     </main>
+    
     {%- include footer.html -%}
     <!-- Remote Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
