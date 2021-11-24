@@ -18,8 +18,7 @@
   <body data-font-base-url="/{{ site.github.repository_name }}/typefaces/{{ page.title }}/fonts" data-fonts="{{ page.fonts }}">
 
     <header>
-      <a href="{{ '/' | relative_url }}">Return</a>
-      <span class="crumb">{{ site.title }} / {{ page.title }}</span>
+      <span class="crumb"><a href="{{ '/' | relative_url }}">{{ site.title }}</a> / {{ page.title }}</span>
     <header>
 
     <main id="content" class="main-content" role="main">
@@ -34,7 +33,7 @@
       </section>
 
       <section class="download_files">
-        <a href="https://github.com/{{ site.github.owner_name }}/{{ site.github.repository_name }}/tree/main/typefaces/{{ page.title }}/fonts">Download Font Files</a>
+        <a href="https://github.com/{{ site.github.owner_name }}/{{ site.github.repository_name }}/tree/main/typefaces/{{ page.title }}/fonts" target="_blank">Download Font Files</a>
       </section>
     </main>
 
