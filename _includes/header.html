@@ -29,10 +29,10 @@
     </nav>
   {%- endif -%}
 
+
   <br>
   <br>
-  <br>
-  <br>
+  <hr>
 
   {% for reference in site.references %}
 
@@ -42,5 +42,16 @@
   </a>
 
   {% endfor %}
+
+  <br>
+  <br>
+  <hr>
+
+  <h2>{{ site.data.typefaces.title }}</h2>
+  <ul>
+     {% for item in site.data.typefaces.docs %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+     {% endfor %}
+  </ul>
 
 </div>
