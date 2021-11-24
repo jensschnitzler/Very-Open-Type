@@ -3,28 +3,25 @@ console.log('init-opentype.js');
 // --- Functions
 
 function init_character_map(font){
-  var containers = $('.character-map');
-  //console.log({containers});
-  if(containers.length >  0){
-    //console.log('init_character_map');
-    containers.each(function(){
-      var container = $(this);
-      container.html('');
+  var main = $('main').first();
+  if(main.length > 0){
 
-      var myGlyphs = font.glyphs.glyphs; //[1].unicode
-      console.log({myGlyphs});
-      var myGlyphsLength = Object.keys(myGlyphs).length;
-      console.log({myGlyphsLength});
+    var newContainer = $('<div class="character-map"/>');
 
-      $.each( myGlyphs, function( i, value ) {
+    newContainer.html('');
 
-        var myUnicode = myGlyphs[i].unicode;
-        if ( myUnicode > 0 ) {
-          var res = String.fromCharCode( myUnicode );
-          container.append( '<span>' + res + '</span>' );
-        }
-      });
+    var myGlyphs = font.glyphs.glyphs; //[1].unicode
+    console.log({myGlyphs});
+    var myGlyphsLength = Object.keys(myGlyphs).length;
+    console.log({myGlyphsLength});
 
+    $.each( myGlyphs, function( i, value ) {
+
+      var myUnicode = myGlyphs[i].unicode;
+      if ( myUnicode > 0 ) {
+        var res = String.fromCharCode( myUnicode );
+        newContainer.append( '<span>' + res + '</span>' );
+      }
     });
   }
 }
@@ -35,9 +32,13 @@ $(function() {
 
   var body = $('body');
   if(body.length >  0){
-    var fontUrl = body.data('font-url'); // get font url from data attribute data-font-url
-    console.log({fontUrl});
-    if(fontUrl.length){
+    var fontBaseUrl = body.data('font-base-url'); // get font url from data attribute data-font-base-url
+    var fonts = body.data('fonts'); // get font url from data attribute data-fonts
+
+    if(fontBaseUrl.length && fonts.length){
+
+      var fontUrl = fontBaseUrl + '/' + fonts + '.otf';
+      console.log({fontUrl});
 
       opentype.load(fontUrl, function(err, font) { // load font
         if (err) {
