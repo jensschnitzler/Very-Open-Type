@@ -41,17 +41,17 @@ section.download_files {
 
 .button {
   display: inline-block;
+  text-align: center;
   padding: 0 .4rem;
   border: 1px solid black;
   border-radius: 1em;
   text-decoration: none;
-  background: transparent;
-  text-align: center;
-  color: black;
+  background: black;
+  color: white;
 
   &:hover {
-    background: black;
-    color: white;
+    background: transparent;
+    color: black;
   }
 
   &.centered {
