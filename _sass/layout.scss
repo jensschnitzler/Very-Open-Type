@@ -5,12 +5,16 @@ html,body {
 }
 
 body {
-  padding: .1rem .3rem .4rem;
+  padding: .1rem 1.3rem 1.4rem;
 }
 
 main {
   padding-bottom: 1rem;
   min-height: 100vh;
+}
+
+footer {
+  margin-top: 3rem;
 }
 
 section + section {
