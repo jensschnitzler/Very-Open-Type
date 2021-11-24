@@ -38,14 +38,8 @@ function init_character_map(){
           } else {
             console.log({font});
 
-            var glyphs1 = font.glyphs;
-            console.log({glyphs1});
-
-            var glyphs2 = font.glyphs();
-            console.log({glyphs2});
-
-            var glyphs3 = font['glyphs'];
-            console.log({glyphs3});
+            var glyphs = font.glyphs;
+            console.log({glyphs});
 
           }
         });
