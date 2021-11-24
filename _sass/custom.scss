@@ -26,6 +26,34 @@ html * {
   box-sizing: border-box;
 }
 
+// --- Elements
+
+.font_test {
+  outline: 1px solid black;
+  &:focus {
+    outline: 1px solid black;
+  }
+}
+
+.button {
+  display: block;
+  border: 1px solid black;
+  border-radius: 1em;
+  text-decoration: none;
+  background: white;
+  color: black;
+
+  &:hover {
+    background: black;
+    color: white;
+  }
+
+  &.centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /*
 
 body {

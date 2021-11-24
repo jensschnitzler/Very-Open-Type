@@ -5,9 +5,14 @@ console.log('init-opentype.js');
 function init_character_map(font){
   var main = $('main').first();
   if(main.length > 0){
-    var newContainer = $('<div class="character-map"/>');
-    newContainer.html('');
-    newContainer.appendTo(main);
+    var newSection = $('<section class="character-map"/>');
+    var newTitle = $('<h2>Character Map</h2>')
+    var newContainer = $('<div class="content"/>');
+
+    newSection.appendTo(main);
+    newTitle.appendTo(newSection);
+    newContainer.appendTo(newSection);
+
     newContainer.css({
       'word-break':'break-all',
       'white-space':'normal',
