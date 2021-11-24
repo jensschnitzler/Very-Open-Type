@@ -8,6 +8,10 @@ function init_character_map(font){
     var newContainer = $('<div class="character-map"/>');
     newContainer.html('');
     newContainer.appendTo(main);
+    newContainer.css({
+      'word-break':'break-all',
+      'white-space':'normal',
+    });
     var myGlyphs = font.glyphs.glyphs; //[1].unicode
     console.log({myGlyphs});
     var myGlyphsLength = Object.keys(myGlyphs).length;
@@ -18,7 +22,7 @@ function init_character_map(font){
       var myUnicode = myGlyphs[i].unicode;
       if ( myUnicode > 0 ) {
         var res = String.fromCharCode( myUnicode );
-        newContainer.append( '<span>' + res + '</span>' );
+        newContainer.append( '<span data-uc="' + myUnicode + '">' + res + '</span>' );
       }
     });
   }
