@@ -31,8 +31,15 @@ function init_character_map(){
         container.html('I am a container!<br>');
         container.append(fontUrl);
         var font = loadFont(fontUrl);
-        var glyphs = font.glyphs;
-        console.log({glyphs});
+
+        var glyphs1 = font.glyphs;
+        console.log({glyphs1});
+
+        var glyphs2 = font.glyphs();
+        console.log({glyphs2});
+
+        var glyphs3 = font['glyphs'];
+        console.log({glyphs3});
       }
 
     });
