@@ -1,14 +1,21 @@
 console.log('init-opentype.js');
 
-opentype.load('/Very-Open-Type/typefaces/Trace/fonts/Trace-Regular.otf', function(err, font) {
-  if (err) {
-    console.log('Font could not be loaded: ' + err);
-  } else {
-    console.log({font});
-  }
-});
+
 
 // --- Functions
+
+function loadFont(url){
+
+  opentype.load(url, function(err, font) {
+    if (err) {
+      console.log('Font could not be loaded: ' + err);
+    } else {
+      console.log({font});
+      return font;
+    }
+  });
+
+}
 
 function init_character_map(){
   var containers = $('.character-map');
@@ -17,7 +24,15 @@ function init_character_map(){
     console.log('init_character_map');
     containers.each(function(){
       var container = $(this);
-      container.html('I am a container!');
+      var fontUrl = container.data('font-url');
+      console.log({fontUrl});
+
+      if( fontUrl.length ){
+        container.html('I am a container!<br>');
+        container.append(fontUrl);
+        var font = loadFont(fontUrl);
+      }
+
     });
   }
 }
