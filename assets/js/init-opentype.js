@@ -9,14 +9,20 @@ function init_character_map(font){
     //console.log('init_character_map');
     containers.each(function(){
       var container = $(this);
-      container.html('I am a container!<br>');
-      //container.append(fontUrl);
+      container.html('');
 
-      var glyphs = font.glyphs.glyphs;
-      console.log({glyphs});
+      var myGlyphs = font.glyphs.glyphs; //[1].unicode
+      console.log({myGlyphs});
+      var myGlyphsLength = Object.keys(myGlyphs).length;
+      console.log({myGlyphsLength});
 
-      $.each( glyphs, function( key, value ) {
-        container.append(key + ": " + value + "<br>");
+      $.each( myGlyphs, function( i, value ) {
+
+        var myUnicode = myGlyphs[i].unicode;
+        if ( myUnicode > 0 ) {
+          var res = String.fromCharCode( myUnicode );
+          container.append( '<span>' + res + '</span>' );
+        }
       });
 
     });
