@@ -29,18 +29,24 @@ html * {
 // --- Elements
 
 .font_test {
-  outline: 1px solid black;
+  outline: none;
   &:focus {
-    outline: 1px solid black;
+    outline: none;
   }
 }
 
+section.download_files {
+  text-align: center;
+}
+
 .button {
-  display: block;
+  display: inline-block;
+  padding: 0 .4rem;
   border: 1px solid black;
   border-radius: 1em;
   text-decoration: none;
-  background: white;
+  background: transparent;
+  text-align: center;
   color: black;
 
   &:hover {
