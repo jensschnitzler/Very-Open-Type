@@ -36,7 +36,7 @@
 
   {% for reference in site.references %}
 
-  <a href="{{ reference.url }}">
+  <a href="{{ reference.url | relative_url }}">
     Reference:
     {{ reference.title }}
   </a>
@@ -50,7 +50,7 @@
   <h2>{{ site.data.typefaces.title }}</h2>
   <ul>
      {% for item in site.data.typefaces.docs %}
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
      {% endfor %}
   </ul>
 
