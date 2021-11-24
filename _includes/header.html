@@ -1,6 +1,8 @@
 <header class="site-header" role="banner">
   <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-  <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+  <!--
+    <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+  -->
   {% if site.github.is_project_page %}
     <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
   {% endif %}
@@ -22,4 +24,20 @@
       {%- endfor -%}
     </nav>
   {%- endif -%}
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  {% for typeface in site.typefaces %}
+  <h2>
+    <a href="{{ typeface.url }}">
+      {{ typeface.name }} - {{ typeface.position }}
+    </a>
+  </h2>
+  <p>{{ typeface.content | markdownify }}</p>
+  {% endfor %}
+
 </div>
