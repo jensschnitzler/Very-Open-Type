@@ -12,8 +12,12 @@ function init_character_map(font){
       container.html('I am a container!<br>');
       //container.append(fontUrl);
 
-      var glyphs = font.glyphs;
+      var glyphs = font.glyphs.glyphs;
       console.log({glyphs});
+
+      $.each( glyphs, function( key, value ) {
+        container.append(key + ": " + value + "<br>");
+      });
 
     });
   }
