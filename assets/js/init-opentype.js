@@ -11,6 +11,7 @@ function init_character_map(font){
     newContainer.css({
       'word-break':'break-all',
       'white-space':'normal',
+      'overflow-x':'hidden',
     });
     var myGlyphs = font.glyphs.glyphs; //[1].unicode
     console.log({myGlyphs});
