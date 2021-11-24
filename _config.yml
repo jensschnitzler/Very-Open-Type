@@ -1,5 +1,7 @@
 theme: jekyll-theme-cayman
 title: Very Open Type
 collections:
+  references:
+    output: true
   typefaces:
     output: true

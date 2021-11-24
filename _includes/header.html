@@ -30,13 +30,12 @@
   <br>
   <br>
 
-  {% for typeface in site.typefaces %}
-  <h2>
-    <a href="{{ typeface.url }}">
-      {{ typeface.name }} - {{ typeface.position }}
-    </a>
-  </h2>
-  <p>{{ typeface.content | markdownify }}</p>
+  {% for reference in site.references %}
+
+  <a href="{{ reference.url }}">
+    {{ reference.name }} - {{ reference.position }}
+  </a>
+
   {% endfor %}
 
 </div>
