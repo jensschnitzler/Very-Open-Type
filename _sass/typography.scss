@@ -47,8 +47,14 @@ p {
 
 a {
   color: inherit;
-  color: yellow;
+  //color: yellow;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: .1em;
+}
+
+footer {
+  font-size: 14px;
+  letter-spacing: .02em;
+  text-align: center;
 }
