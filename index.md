@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Very Open Type
 ---
 
 # Very Open Type
