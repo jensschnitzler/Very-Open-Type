@@ -5,11 +5,9 @@ console.log('init-opentype.js');
 function init_character_map(font){
   var main = $('main').first();
   if(main.length > 0){
-
     var newContainer = $('<div class="character-map"/>');
-
     newContainer.html('');
-
+    newContainer.appendTo(main);
     var myGlyphs = font.glyphs.glyphs; //[1].unicode
     console.log({myGlyphs});
     var myGlyphsLength = Object.keys(myGlyphs).length;
