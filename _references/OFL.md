@@ -1,5 +1,6 @@
 ---
 layout: default
+title: SIL Open Font License
 ---
 
 # SIL OPEN FONT LICENSE
