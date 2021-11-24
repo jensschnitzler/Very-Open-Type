@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   {%- include head.html -%}
-  <body>
+  <body data-font-url="/{{ site.github.repository_name }}/typefaces/{{ page.title }}/fonts/{{ page.fonts }}.otf">
     <a href="{{ '/' | relative_url }}">Return</a>
-    <div class="crumb">{{ site.title }} / Typefaces / {{ page.title }}</div>
+    <div class="crumb">{{ site.title }} / {{ page.title }}</div>
 
     <div class="">Repo Name: {{ site.github.repository_name }}</div>
     <div class="">Site Title: {{ site.title }}</div>
@@ -15,9 +15,7 @@
       <br>
       <br>
 
-      {{ page.fonts }}
-
-      <div class="character-map" data-font-url="/Very-Open-Type/typefaces/Trace/fonts/Trace-Regular.otf">ABC</div>
+      <div class="character-map">ABC</div>
 
     </main>
     {%- include footer.html -%}
