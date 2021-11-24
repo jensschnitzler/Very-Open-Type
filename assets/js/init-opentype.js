@@ -10,7 +10,7 @@ function loadFont(url){
     if (err) {
       console.log('Font could not be loaded: ' + err);
     } else {
-      console.log({font});
+      //console.log({font});
       return font;
     }
   });
@@ -31,6 +31,8 @@ function init_character_map(){
         container.html('I am a container!<br>');
         container.append(fontUrl);
         var font = loadFont(fontUrl);
+        var glyphs = font.glyphs;
+        console.log({glyphs});
       }
 
     });

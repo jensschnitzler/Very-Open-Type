@@ -26,6 +26,7 @@ html {
 html,body {
   font-family: "Trace", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
+  font-style: clamp(20px, 3vw, 30px);
   line-height: 1.2;
   font-weight: normal;
   //color: $body-text-color;
