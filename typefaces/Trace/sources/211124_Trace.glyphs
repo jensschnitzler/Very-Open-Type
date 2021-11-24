@@ -4,8 +4,8 @@ DisplayStrings = (
 "HnnOhn\012HOHDDHO\012nnnOnnnn",
 "nnnnnnnn\012\012\012onnonnonnonnonnnonnnopqdbbon\012\012ninini/idotless/space/idotless/idotless/idotless/idotless/idotless/idotless/idotless/idotless nnnnn/idotless/idotless/idotless/idotless \012minimum/space/space nm/space pbqd\012nihilo\012\012nnonnonnonnonnonnon\012\012nnann\012\012VAnnnn/space \012\012AVAVÄVÄWf\012\012Lorem/space Ipsum/space is/space simply/space dummy/space text/space of/space the/space printing/space and/space typesetting/space industry./space Lorem/space Ipsum/space has/space been/space the/space industrys/space standard/space dummy/space text/space ever/space since/space the/space 1500s,/space when/space an/space unknown/space printer/space took/space a/space galley/space of/space type/space and/space scrambled/space it/space to/space make/space a/space type/space specimen/space book./space It/space has/space survived/space not/space only/space five/space centuries,/space but/space also/space the/space leap/space into/space electronic/space typesetting,/space remaining/space essentially/space unchanged./space It/space was/space popularised/space in/space the/space 1960s/space with/space the/space release/space of/space Letraset/space sheets/space containing/space Lorem/space Ipsum/space passages,/space and/space more/space recently/space with/space desktop/space publishing/space software/space like/space Aldus/space PageMaker/space including/space versions/space of/space Lorem/space Ipsum.\012\012\012H\012\012"
 );
-date = "2021-11-04 07:46:09 +0000";
-familyName = "RectaTrace_211104-1_JS";
+date = "2021-11-24 13:41:02 +0000";
+familyName = Trace;
 featurePrefixes = (
 {
 automatic = 1;
