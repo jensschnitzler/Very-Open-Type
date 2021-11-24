@@ -10,7 +10,7 @@ function init_character_map(font){
     containers.each(function(){
       var container = $(this);
       container.html('I am a container!<br>');
-      container.append(fontUrl);
+      //container.append(fontUrl);
 
       var glyphs = font.glyphs;
       console.log({glyphs});
@@ -26,6 +26,7 @@ $(function() {
   var body = $('body');
   if(body.length >  0){
     var fontUrl = body.data('font-url'); // get font url from data attribute data-font-url
+    console.log({fontUrl});
     if(fontUrl.length){
 
       opentype.load(fontUrl, function(err, font) { // load font
