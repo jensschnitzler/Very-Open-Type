@@ -9,12 +9,6 @@
 </section>
 
 <section>
-  {% if site.github.is_project_page %}
-    <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-  {% endif %}
-<section>
-
-<section>
   <h2>{{ site.data.typefaces.title }}</h2>
   {% for item in site.data.typefaces.docs %}
   <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
