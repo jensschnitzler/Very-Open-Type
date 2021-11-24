@@ -31,17 +31,25 @@ function init_character_map(){
         container.html('I am a container!<br>');
         container.append(fontUrl);
 
-        var font = loadFont(fontUrl);
-        console.log({font});
+        // Load Font
+        opentype.load(fontUrl, function(err, font) {
+          if (err) {
+            console.log('Font could not be loaded: ' + err);
+          } else {
+            console.log({font});
 
-        //var glyphs1 = font.glyphs;
-        //console.log({glyphs1});
+            var glyphs1 = font.glyphs;
+            console.log({glyphs1});
 
-        //var glyphs2 = font.glyphs();
-        //console.log({glyphs2});
+            var glyphs2 = font.glyphs();
+            console.log({glyphs2});
 
-        var glyphs3 = font['glyphs'];
-        console.log({glyphs3});
+            var glyphs3 = font['glyphs'];
+            console.log({glyphs3});
+
+          }
+        });
+
       }
 
     });
@@ -51,5 +59,13 @@ function init_character_map(){
 // --- Execute
 
 $(function() {
-  init_character_map()
+  init_character_map();
+
+  var hostname = $(location).attr('hostname');                //origin URL
+  console.log({hostname});
+  var pathname = $(location).attr('pathname');                // path name
+  console.log({pathname});
+  var hash = $(location).attr('hash');                    // everything comes after hash
+  console.log({hash});
+
 });
