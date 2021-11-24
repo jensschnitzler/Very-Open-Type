@@ -40,6 +40,14 @@
   <br>
   <br>
   <hr>
+  <h2>Typefaces</h2>
+  {% for typeface in site.typefaces %}
+  <a href="{{ typeface.url | relative_url }}">{{ typeface.title }}</a>
+  {% endfor %}
+
+  <br>
+  <br>
+  <hr>
   <h2>{{ site.data.typefaces.title }}</h2>
   {% for item in site.data.typefaces.docs %}
   <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
