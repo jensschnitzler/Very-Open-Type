@@ -10,7 +10,7 @@ body {
 
 main {
   padding-bottom: 1rem;
-  min-height: 100vh;
+  min-height: 70vh;
 }
 
 footer {
@@ -32,4 +32,21 @@ section.opener {
 
 section.opener.hero {
   margin-top: .5rem;
+  margin-top: 0;
+  margin: 0;
+  height: 100vh;
+  background: black;
+  h1 {
+    max-width: 3em;
+    color: transparent;
+    text-shadow:
+      1px 1px 0 #fff,
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+      -1px -1px 0 #fff,
+      1px 0px 0 #fff,
+      0px 1px 0 #fff,
+      -1px 0px 0 #fff,
+      0px -1px 0 #fff;
+  }
 }
