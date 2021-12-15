@@ -7,8 +7,8 @@
 <nav class="main_nav">
   <div class="content">
     <a href="#"><span>Very Open Type</span></a>
-    <a href="#"><span>Fonts</span></a>
-    <a href="#"><span>Info</span></a>
+    <a href="#fonts"><span>Fonts</span></a>
+    <a href="#info"><span>Info</span></a>
   </div>
 </nav>
 
@@ -16,7 +16,27 @@
   {%- include cover.html -%}
 </section>
 
+<section id="fonts">
+
+  <div class="fonts_overview grid">
+    <!--<h2>{{ site.data.typefaces.title }}</h2>-->
+    {% for item in site.data.typefaces.docs %}
+    <a href="{{ item.url | relative_url }}" class="grid_item">
+      <span>a</span>
+      <span>{{ item.title }}</span>
+      <span>by {{ item.author }}</span>
+    </a>
+    {% endfor %}
+  <div>
+
+  <div class="fonts_tester">
+    <!--<h2>{{ site.data.typefaces.title }}</h2>-->
+    Fonts Tester
+  <div>
+
 <section>
+
+<section id="info">
   <h2>{{ site.data.typefaces.title }}</h2>
   {% for item in site.data.typefaces.docs %}
   <a href="{{ item.url | relative_url }}">{{ item.title }}</a>

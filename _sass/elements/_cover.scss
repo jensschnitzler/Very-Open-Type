@@ -1,6 +1,6 @@
-$color-b: orange; // background
+//$color-b: orange; // background
 $color-f: black; // fill
-$color-p: orange; // punch
+$color-p: $color-b; // punch
 $color-o: black; // outline
 $outline: 2px;
 $borderRadius: 10vmin;
