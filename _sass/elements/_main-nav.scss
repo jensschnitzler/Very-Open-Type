@@ -1,0 +1,35 @@
+nav.main_nav {
+  background: red;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  transform-origin: bottom left;
+  transform: translateY(-100%) rotate(90deg);
+  .content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    a {
+      margin: 0;
+      padding: 0;
+      display: block;
+      flex: 1 1 auto;
+      cursor: pointer;
+      span {
+        display: block;
+        padding: .5rem;
+        position: relative;
+        width: 100%;
+        border-top: 1px solid black;
+      }
+      &+a {
+        border-left: 1px solid black;
+      }
+      &:hover {
+        color: red;
+      }
+    }
+  }
+}
