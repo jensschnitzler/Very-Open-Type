@@ -23,8 +23,7 @@
     {% for item in site.data.typefaces.docs %}
     <a href="{{ item.url | relative_url }}" class="grid_item">
       <span>a</span>
-      <span>{{ item.title }}</span>
-      <span>by {{ item.author }}</span>
+      <span>{{ item.title }}<br>by {{ item.author }}</span>
     </a>
     {% endfor %}
   <div>
