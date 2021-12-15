@@ -5,6 +5,7 @@
 @import "layout";
 @import "elements/main-nav";
 @import "elements/cover";
+@import "elements/font-overview";
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
