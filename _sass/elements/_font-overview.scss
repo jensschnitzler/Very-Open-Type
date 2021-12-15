@@ -29,6 +29,7 @@ $lineMargin: .3rem;
   display: grid;
   position: relative;
   grid-template-columns: repeat(4, 1fr);
+  
   &>.grid_item {
     display: block;
     height: 25vh;
@@ -38,15 +39,33 @@ $lineMargin: .3rem;
       content: '';
       display: block;
       position: absolute;
-      top: $lineMargin;
-      bottom: $lineMargin;
-      left: 0;
-      width: 1px;
       background: black;
     }
 
-    &:nth-child(4n+4) {
+    &:after {
+      top: $lineMargin;
+      bottom: $lineMargin;
+      right: 0;
+      width: 1px;
+    }
 
+    &:before {
+      bottom: 0;
+      right: $lineMargin;
+      left: $lineMargin;
+      height: 1px;
+    }
+
+    &:nth-child(4n+4) {
+      &:after {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      &:after {
+        display: block;
+      }
     }
   }
 }
