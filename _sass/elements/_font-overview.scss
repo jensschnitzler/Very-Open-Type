@@ -1,6 +1,10 @@
+$lineMargin: .3rem;
+
 .font-overview {
+
   a {
     text-decoration: none;
+    display: block;
     span {
       display: block;
       position: relative;
@@ -16,9 +20,23 @@
 }
 
 .grid {
+  width: 100%;
   display: grid;
+  position: relative;
   grid-template-columns: repeat(4, 1fr);
   &>.grid-item {
     display: block;
+    &:nth-child(4n+4) {
+      &:after,&:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: $lineMargin;
+        bottom: $lineMargin;
+        left: 0;
+        width: 1px;
+        background: black;
+      }
+    }
   }
 }
