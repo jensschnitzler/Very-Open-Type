@@ -24,6 +24,7 @@ nav.main_nav {
       text-decoration: none;
       text-transform: uppercase;
       padding: 0 $lineMargin;
+      position: relative;
       span {
         display: block;
         padding: $lineMargin 0;
@@ -39,6 +40,7 @@ nav.main_nav {
         bottom: $lineMargin;
         left: 0;
         width: 1px;
+        background: black;
         //border-left: 1px solid black;
 
       }
