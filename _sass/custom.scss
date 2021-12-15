@@ -4,6 +4,7 @@
 @import "typography";
 @import "layout";
 @import "elements/main-nav";
+@import "elements/cover";
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
