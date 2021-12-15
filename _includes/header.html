@@ -26,25 +26,25 @@
       <span>{{ item.title }}<br>by {{ item.author }}</span>
     </a>
     {% endfor %}
-  <div>
+  </div>
 
   <div class="fonts_tester">
     <!--<h2>{{ site.data.typefaces.title }}</h2>-->
     Fonts Tester
-  <div>
+  </div>
 
-<section>
+</section>
 
 <section id="info">
   <h2>{{ site.data.typefaces.title }}</h2>
   {% for item in site.data.typefaces.docs %}
   <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
   {% endfor %}
-<section>
+</section>
 
 <section>
   <h2>Further References</h2>
   {% for reference in site.references %}
   <a href="{{ reference.url | relative_url }}">{{ reference.title }}</a>
   {% endfor %}
-<section>
+</section>
