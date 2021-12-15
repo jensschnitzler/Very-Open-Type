@@ -1,5 +1,7 @@
+$lineMargin: .3rem;
+
 nav.main_nav {
-  background: white;
+  background: tranparent;
   display: block;
   position: fixed;
   top: 0;
@@ -21,16 +23,24 @@ nav.main_nav {
       //text-align: center;
       text-decoration: none;
       text-transform: uppercase;
-      padding: 0 .5rem;
+      padding: 0 $lineMargin;
       span {
         display: block;
-        padding: .5rem 0;
+        padding: $lineMargin 0;
         position: relative;
         width: 100%;
         border-top: 1px solid black;
       }
-      &+a {
-        border-left: 1px solid black;
+      &+a:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: $lineMargin;
+        bottom: $lineMargin;
+        left: 0;
+        width: 1px;
+        //border-left: 1px solid black;
+
       }
       &:hover {
         color: red;
