@@ -15,8 +15,8 @@ $lineMargin: .3rem;
       }
       &:nth-child(2){
         position: absolute;
-        bottom: 0;
-        left: 0;
+        bottom: $lineMargin;
+        left: $lineMargin;
       }
     }
   }
