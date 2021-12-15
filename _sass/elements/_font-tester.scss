@@ -1,3 +1,11 @@
 .fonts_tester {
-  background: red;
+  //background: red;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+
+  &>div {
+    display: block;
+    position: relative;
+  }
 }
