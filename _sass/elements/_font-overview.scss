@@ -24,24 +24,26 @@ $lineMargin: .3rem;
 
 .grid {
   width: 100%;
-
   display: grid;
   position: relative;
   grid-template-columns: repeat(4, 1fr);
   &>.grid-item {
     display: block;
     height: 25vh;
+
+    &:after,&:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: $lineMargin;
+      bottom: $lineMargin;
+      left: 0;
+      width: 1px;
+      background: black;
+    }
+    
     &:nth-child(4n+4) {
-      &:after,&:before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: $lineMargin;
-        bottom: $lineMargin;
-        left: 0;
-        width: 1px;
-        background: black;
-      }
+
     }
   }
 }
