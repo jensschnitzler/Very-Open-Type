@@ -1,11 +1,40 @@
+$lineMargin: .3rem;
+
 .fonts_tester {
   //background: red;
   display: flex;
   flex-flow: column nowrap;
   position: relative;
+  margin-top: 5vh;
 
   &>div {
     display: block;
     position: relative;
+  }
+
+  .wrapper {
+    margin: 1rem 0;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: black;
+      bottom: 0;
+      right: $lineMargin;
+      left: $lineMargin;
+      height: 1px;
+    }
+  }
+
+  .editor {
+    font-size: 16vw;
+    line-height: .9;
+    padding: 1rem;
+
+    &:focus {
+      outline: 0;
+      border: 0;
+    }
+
   }
 }

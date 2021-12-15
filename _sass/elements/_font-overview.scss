@@ -21,6 +21,12 @@ $lineMargin: .3rem;
         left: $lineMargin;
       }
     }
+    &:hover {
+      span:nth-child(1){
+        color: transparent;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+      }
+    }
   }
 }
 
