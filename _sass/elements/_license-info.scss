@@ -1,0 +1,13 @@
+section.license-info {
+  padding: $lineMargin;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: black;
+    top: 0;
+    right: $lineMargin;
+    left: $lineMargin;
+    height: 1px;
+  }
+}

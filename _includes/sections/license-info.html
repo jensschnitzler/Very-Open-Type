@@ -1,0 +1,7 @@
+<section class="license-info">
+  All typefaces are published under the
+  {% for reference in site.references %}
+  <a href="{{ reference.url | relative_url }}">{{ reference.title }}</a>
+  {% endfor %}
+  .
+</section>

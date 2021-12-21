@@ -12,17 +12,9 @@
   </div>
 </nav>
 
-<section class="opener hero">
-  {%- include cover.html -%}
-</section>
 
-<section class="license-info">
-  All typefaces are published under the
-  {% for reference in site.references %}
-  <a href="{{ reference.url | relative_url }}">{{ reference.title }}</a>
-  {% endfor %}
-  .
-</section>
+{%- include sections/cover.html -%}
+{%- include sections/license-info.html -%}
 
 <section id="fonts">
 
