@@ -6,6 +6,7 @@
 @import "elements/cover";
 @import "elements/font-overview";
 @import "elements/font-tester";
+@import "elements/rangeSlider";
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {

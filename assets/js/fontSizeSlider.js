@@ -1,4 +1,4 @@
-console.log('fontSizeSlider,js');
+console.log('fontSizeSlider.js');
 
 function setSliderFontSize($slider){
   var val = $slider.val() || 40;
@@ -11,8 +11,9 @@ function setSliderFontSize($slider){
 
 $(function(){
   var $body = $('body');
-  var $sliders = body.find('.fontSizeSlider');
+  var $sliders = $body.find('.fontSizeSlider');
   $sliders.each(function(){
+    console.log('slider changed');
     var $slider = $(this);
     setSliderFontSize($slider);
     $slider.change(function(){
