@@ -3,7 +3,7 @@
   <div class="fonts_overview grid">
     <!--<h2>{{ site.data.typefaces.title }}</h2>-->
     {% for item in site.data.typefaces.docs %}
-    <a href="#{{ forloop.index }}-{{ item.title }}" class="grid_item">
+    <a href="#{{ forloop.index }}-{{ item.title | slugify }}" class="grid_item">
       <span>a</span>
       <span>{{ item.title }}<br>by {{ item.author }}</span>
     </a>
@@ -13,13 +13,13 @@
   <div class="fonts_tester">
     <!--Fonts Tester-->
     {% for item in site.data.typefaces.docs %}
-    <div id="{{ forloop.index }}-{{ item.title }}" class="wrapper" data-title="{{ item.title }}" data-author="{{ item.author }}" data-url="{{ item.url }}">
+    <div id="{{ forloop.index }}-{{ item.title | slugify }}" class="wrapper" data-title="{{ item.title }}" data-author="{{ item.author }}" data-url="{{ item.url }}">
       <div class="header">
         <div class="title">{{ item.title }}</div>
         <div class="author">{{ item.author }}</div>
         <div class="size"><input class="fontSizeSlider" type="range" min="20" max="100" value="40" step="1"></div>
         <div class="link"><a href="{{ item.url }}" class="button">Further Information</a></div>
-        <div class="download"><a href="{{ item.url }}" class="button">Download</a></div>
+        <div class="download"><a href="https://github.com/jensschnitzler/Very-Open-Type/tree/main/typefaces/{{ item.title | slugify }}/fonts" target="_blank" class="button">Download</a></div>
       </div>
       <div class="editor" contenteditable="true" lang="klingon" spellcheck="false">The lazy dog jumps over the quick brown fox.</div>
     </div>
