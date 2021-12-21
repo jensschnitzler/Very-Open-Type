@@ -31,7 +31,7 @@
   <div class="fonts_tester">
     <!--Fonts Tester-->
     {% for item in site.data.typefaces.docs %}
-    <div class="wrapper">
+    <div class="wrapper" data-title="{{ item.title }}" data-author="{{ item.author }}" data-url="{{ item.url }}">
       <div class="editor" contenteditable="true">The lazy dog jumps over the quick brown fox.</div>
     </div>
     {% endfor %}
