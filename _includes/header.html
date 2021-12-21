@@ -16,6 +16,14 @@
   {%- include cover.html -%}
 </section>
 
+<section class="license-info">
+  All typefaces are published under the
+  {% for reference in site.references %}
+  <a href="{{ reference.url | relative_url }}">{{ reference.title }}</a>
+  {% endfor %}
+  .
+</section>
+
 <section id="fonts">
 
   <div class="fonts_overview grid">
@@ -50,12 +58,5 @@
   <h2>{{ site.data.typefaces.title }}</h2>
   {% for item in site.data.typefaces.docs %}
   <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-  {% endfor %}
-</section>
-
-<section>
-  <h2>Further References</h2>
-  {% for reference in site.references %}
-  <a href="{{ reference.url | relative_url }}">{{ reference.title }}</a>
   {% endfor %}
 </section>
