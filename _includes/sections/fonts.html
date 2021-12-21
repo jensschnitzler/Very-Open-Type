@@ -3,7 +3,7 @@
   <div class="fonts_overview grid">
     <!--<h2>{{ site.data.typefaces.title }}</h2>-->
     {% for item in site.data.typefaces.docs %}
-    <a href="{{ item.url | relative_url }}" class="grid_item">
+    <a href="#{{ forloop.index }}-{{ item.title }}" class="grid_item">
       <span>a</span>
       <span>{{ item.title }}<br>by {{ item.author }}</span>
     </a>
@@ -13,7 +13,7 @@
   <div class="fonts_tester">
     <!--Fonts Tester-->
     {% for item in site.data.typefaces.docs %}
-    <div class="wrapper" data-title="{{ item.title }}" data-author="{{ item.author }}" data-url="{{ item.url }}">
+    <div id="{{ forloop.index }}-{{ item.title }}" class="wrapper" data-title="{{ item.title }}" data-author="{{ item.author }}" data-url="{{ item.url }}">
       <div class="header">
         <div class="title">{{ item.title }}</div>
         <div class="author">{{ item.author }}</div>
