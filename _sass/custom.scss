@@ -57,8 +57,9 @@ section.download_files {
   box-shadow: 0 .16rem .16rem 0 rgba(0,0,0,.2);
 
   &:hover {
-    background: transparent;
-    color: black;
+    background: black;
+    color: $color-b;
+    box-shadow: none;
   }
 
   &.centered {
