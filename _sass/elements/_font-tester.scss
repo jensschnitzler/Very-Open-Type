@@ -27,21 +27,24 @@ $lineMargin: .3rem;
   }
 
   .header {
-    background: red;
+    //background: red;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     &>div {
       flex: 0 0 auto;
       display: block;
+      a {
+        text-decoration: none;
+      }
     }
   }
 
   .editor {
-    font-size: 8vw;
+    font-size: 40px;
     line-height: 1.05;
-    padding: 2rem;
+    padding: .2em;
 
     &:focus {
       outline: 0;
