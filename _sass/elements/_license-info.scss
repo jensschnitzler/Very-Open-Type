@@ -1,11 +1,11 @@
 section.license-info {
-
+  padding-top: 1.4rem
   &:before {
     content: '';
     display: block;
     position: absolute;
     background: black;
-    top: 0;
+    bottom: 0;
     right: $lineMargin;
     left: $lineMargin;
     height: 1px;

@@ -49,11 +49,12 @@ section.download_files {
   display: inline-block;
   text-align: center;
   padding: 0 .4rem;
-  border: 1px solid black;
+  border: 1px solid $color-b;
   border-radius: 1em;
   text-decoration: none;
-  background: black;
-  color: white;
+  background: $color-b;
+  //color: white;
+  box-shadow: 0 .4rem .4rem 0 rgba(0,0,0,.2);
 
   &:hover {
     background: transparent;
