@@ -17,6 +17,6 @@ $(function(){
     console.log('slider changed');
     var $slider = $(this);
     setSliderFontSize($slider);
-    $slider.on('input change', setSliderFontSize($slider) );
+    $slider.on('input change', function(){ setSliderFontSize($slider); } );
   });
 });
