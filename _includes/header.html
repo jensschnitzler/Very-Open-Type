@@ -1,9 +1,6 @@
 <!--
-<header class="site-header" role="banner">
-  <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-</header>
+<div>{{ page.description | default: site.description | default: site.github.project_tagline }}</div>
 -->
-
 <nav class="main_nav">
   <div class="content">
     <a href="#"><span>Very Open Type</span></a>
@@ -11,44 +8,6 @@
     <a href="#info"><span>Info</span></a>
   </div>
 </nav>
-
-
 {%- include sections/cover.html -%}
 {%- include sections/license-info.html -%}
-
-<section id="fonts">
-
-  <div class="fonts_overview grid">
-    <!--<h2>{{ site.data.typefaces.title }}</h2>-->
-    {% for item in site.data.typefaces.docs %}
-    <a href="{{ item.url | relative_url }}" class="grid_item">
-      <span>a</span>
-      <span>{{ item.title }}<br>by {{ item.author }}</span>
-    </a>
-    {% endfor %}
-  </div>
-
-  <div class="fonts_tester">
-    <!--Fonts Tester-->
-    {% for item in site.data.typefaces.docs %}
-    <div class="wrapper" data-title="{{ item.title }}" data-author="{{ item.author }}" data-url="{{ item.url }}">
-      <div class="header">
-        <div class="title">{{ item.title }}</div>
-        <div class="author">{{ item.author }}</div>
-        <div class="size"><input class="fontSizeSlider" type="range" min="20" max="100" value="40" step="1"></div>
-        <div class="link"><a href="{{ item.url }}">Further Information</a></div>
-        <div class="download"><a href="{{ item.url }}">Download</a></div>
-      </div>
-      <div class="editor" contenteditable="true" lang="klingon" spellcheck="false">The lazy dog jumps over the quick brown fox.</div>
-    </div>
-    {% endfor %}
-  </div>
-
-</section>
-
-<section id="info">
-  <h2>{{ site.data.typefaces.title }}</h2>
-  {% for item in site.data.typefaces.docs %}
-  <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-  {% endfor %}
-</section>
+{%- include sections/fonts.html -%}

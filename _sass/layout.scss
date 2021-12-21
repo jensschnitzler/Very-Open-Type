@@ -21,6 +21,10 @@ section {
   position: relative;
   padding: 0 1.3rem 1.4rem 2rem;
   //margin: 3rem 0;
+  &>.content {
+    padding: $lineMargin;
+    text-align: center;
+  }
 }
 
 section.opener {
