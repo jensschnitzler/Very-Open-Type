@@ -26,6 +26,18 @@ $lineMargin: .3rem;
     }
   }
 
+  .header {
+    background: red;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    &>div {
+      flex: 0 0 auto;
+      display: block;
+    }
+  }
+
   .editor {
     font-size: 8vw;
     line-height: 1.05;
