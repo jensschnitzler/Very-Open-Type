@@ -10,10 +10,13 @@ $lineMargin: .3rem;
       display: block;
       position: relative;
       &:nth-child(1){
-        font-size: 22vw;
-        line-height: 0.5;
+        font-size: 25vh;
+        line-height: .9;
         text-align: center;
-        padding-bottom: 0.2em;
+        vertical-align: middle;
+        /* padding-bottom: 0.2em; */
+        margin-top: -0.15em;
+        margin-bottom: 0.1em;
       }
       &:nth-child(2){
         position: absolute;
@@ -38,7 +41,7 @@ $lineMargin: .3rem;
 
   &>.grid_item {
     display: block;
-    height: 25vh;
+    //height: 25vh;
     position: relative;
 
     &:after,&:before {
