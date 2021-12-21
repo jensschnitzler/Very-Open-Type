@@ -1,5 +1,5 @@
 section.license-info {
-  padding: $lineMargin;
+
   &:before {
     content: '';
     display: block;
@@ -9,5 +9,9 @@ section.license-info {
     right: $lineMargin;
     left: $lineMargin;
     height: 1px;
+  }
+  .content {
+    padding: $lineMargin;
+    text-align: center;
   }
 }

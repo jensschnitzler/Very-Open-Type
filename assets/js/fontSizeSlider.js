@@ -1,6 +1,7 @@
 console.log('fontSizeSlider.js');
 
 function setSliderFontSize($slider){
+  console.log('setSliderFontSize');
   var val = $slider.val() || 40;
   var $wrapper = $slider.closest('.wrapper');
   var $editor = $wrapper.find('.editor').first();
